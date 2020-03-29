@@ -127,6 +127,7 @@ class GstPipeline:
                 self.box = (-box.get_property('left'), -box.get_property('top'),
                     self.sink_size[0] + box.get_property('left') + box.get_property('right'),
                     self.sink_size[1] + box.get_property('top') + box.get_property('bottom'))
+        print (self.box)
         return self.box
 
     def inference_loop(self):
